@@ -1,0 +1,120 @@
+
+/*
+ google fonts
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
+
+/*
+ end
+*/
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+input, button, textarea{
+    outline: none;
+    border: 0;
+
+}
+
+.container{
+    width: 930px;
+    margin: 0 auto;
+}
+
+.container-nav{
+    background: #fff;
+}
+
+.container-nav::after{
+    display: table;
+    content: ' ';
+    clear: both;
+}
+
+.nav-header{
+    float: left;
+    margin-right: 48px;
+}
+
+.nav-header button{
+    color:  #ffffff;
+    background: #56ccc8;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.nav-social li a{
+    padding: 20px 10px !important;
+}
+
+.nav-social li:first-child a{
+    padding: 20px 20px !important;
+}
+
+.main-menu {
+    list-style: none;
+}
+
+.main-menu::after{
+    display: table;
+    content: ' ';
+    clear: both;
+}
+
+.main-menu li{
+    float: left;
+}
+
+.main-menu li a{
+    display: block;
+    font-size: 16px;
+    font-family: "Timew New Roman", Tahoma, Arial, Helvetica, sans-serif;
+    color: #475055;
+    padding: 20px 17px;
+}
+
+.main-menu li:first-child a{
+    padding-right: 17px;
+    padding-left: 0;
+}
+
+.main-menu li a i{
+    color: #b2b9bd;
+}
+
+.main-menu li a:hover{
+    color: #56ccc8;
+}
+
+.main-menu li a:hover i{
+    color: #b2b9bd;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.right-separator{
+    border-right: 1px #b2b9bd solid;
+}
+
+#user-login{
+    display: block;
+    background: url("../img/sprite.png") -3px -4px;
+    width: 16px;
+    height: 16px;
+}
