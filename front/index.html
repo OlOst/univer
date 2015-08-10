@@ -1,22 +1,212 @@
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-  <script src="js/scripts.js"></script>
-  <p>hello</p>
+<div class="wrapper">
+    <div class="container">
+        <nav class="nav-menu">
+            <div class="mobile-btn">
+                <a id="mob-colapser" href="#"></a>
+            </div>
+            <div class="left-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="right-menu">
+                <ul>
+                    <li><a id="menu-search" href="#"></a></li>
+                    <li><a id="menu-fb" href="#"></a></li>
+                    <li><a id="menu-twitter" href="#"></a></li>
+                    <li><a id="menu-google" href="#"></a></li>
+                    <li><a id="menu-user" href="#"></a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="social">
+            <div class="social-list">
+                <ul>
+                    <li id="list-fb"><a href="#">Facebook</a></li>
+                    <li id="list-twitter"><a href="#">Twitter</a></li>
+                    <li id="list-google"><a href="#">Google+</a></li>
+                    <li id="list-rss"><a href="#">Rss Feeds</a></li>
+                    <li id="list-pt"><a href="#">Pinterest</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="social-detail">
+            <div class="fb-detail">
+                <img src="fb-logo.png">
+                <span id="fb-follow">156K</span>
+                <a href="#">Follow</a>
+            </div>
+
+            <div class="twitter-detail">
+                <img src="twitter-logo.png">
+                <span id="twitter-follow">89K</span>
+                <a href="#">Following</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="clear"></div>
+
+    <div class="container">
+        <div class="sign-in">
+            <h3>Sign In</h3>
+            <span>Just select your favorite social network to get started</span><br>
+            <a href="#"> <img src="fb-sign.png"></a>
+            <a href="#"> <img src="twitter-sign.png"></a>
+            <a href="#"> <img src="google-sign.png"></a>
+            <a href="#"> <img src="in-sign.png"></a>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="container">
+        <div class="join-news">
+            <h3>Join the Newsletter</h3>
+            <span>Sign up for personalized daily newsletter</span>
+            <form>
+                <input class="input" type="text" placeholder="Enter email adress">
+                <input class="submit-btn" type="submit" value="SIGN UP">
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="stories">
+            <a class="left" href="#"></a>
+            <a class="right" href="#"></a>
+            <span class="title">Featured Story</span><br>
+            <div class="text">Now that the holiday gift-giving time is over, we're
+                                sure many of our readers unwrapped some new consoles.
+                                Despite its long life on the market...
+            </div>
+            <button class="stories-btn">VIEW MORE</button>
+            <div class="circles">
+                <a href="#" class="circle"></a>
+                <a href="#" class="circle"></a>
+                <a href="#" class="circle"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="container">
+        <div class="video">
+
+            <div class="video-descr">
+                <div class="title">Best story you have ever heard</div>
+                <div class="time">24 minutes ago </div><br>
+                <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem ipsum has been the industry’s... <a href="#">Read more</a></div>
+            </div>
+
+            <div class="video-btn">
+                <a href="#" class="like">Like</a><br>
+
+                <a href="#" class="later">Later</a><br>
+
+                <a href="#" class="share">Share</a>
+
+            </div>
+
+            <div class="video-content">
+                <video src="trailer.mp4" controls="controls"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="container">
+        <div class="instagram">
+            <div class="instagram-btns">
+                <a class="share" href="#">1,325</a>
+                <a class="liked" href="#">682</a>
+
+            </div>
+
+            <div class="instagram-content">
+                <div class="instagram-about">
+                    <div class="title">Best story you have ever heard</div>
+                    <div class="time">24 minutes ago </div><br>
+                    <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem ipsum has been the industry’s... <a href="#">Read more</a></div>
+                </div>
+                <div class="instagram-photo">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="twitter">
+                <div class="title">
+                    <span class="name">
+                        Alex White
+                    </span>
+                    <span class="login">
+                        @alexwhite
+                    </span>
+                </div>
+
+                <div class="text">Singolo is a free PSD template
+                                    of a flat, single page website
+                                    created by @PsdChat #freebie
+                                    #psd http://bit.ly/19XM8Lj
+                </div>
+
+                <div class="time">
+                    2 hours ago
+                </div>
+
+                <div class="text">Singolo is a free PSD template
+                    of a flat, single page website
+                    created by @PsdChat #freebie
+                    #psd http://bit.ly/19XM8Lj
+                </div>
+
+                <div class="time">
+                    2 hours ago
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="calendar">
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
