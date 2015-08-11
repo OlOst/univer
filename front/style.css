@@ -377,7 +377,9 @@ body{
     text-align: center;
     background-color: #fff;
     height: 160px;
-    margin: 6px;
+    margin-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
     padding: 10px;
 }
 
@@ -389,7 +391,9 @@ body{
     text-align: center;
     background-color: #fff;
     height: 160px;
-    margin: 6px;
+    margin-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
     padding: 10px;
 }
 
@@ -420,7 +424,9 @@ body{
 .stories{
     background-color: #787878;
     height: 450px;
-    margin: 6px;
+    margin-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
     padding: 60px;
     color: #ffffff;
     position: relative;
@@ -484,23 +490,36 @@ body{
 
 .circles{
     text-align: center;
+    position: relative;
+    top: 220px;
 }
 
 .circles .circle{
-    background-color: transparent;
-    height: 5px;
-    width: 10px;
-    border: 10px solid #ffffff;
-    border-radius: 10px;
-    margin: 5px;
+    width:10px;
+    height:10px;
+    display: inline-block;
+    border: 2px solid #ffffff;
+    border-radius:50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    -khtml-border-radius:50px; font-size:20px;
+    color:#fff;
+    line-height:100px;
+    text-align:center;
+    background: transparent;
+    margin: 10px;
 }
 
-
+.circles .circle:hover{
+    background: #ffffff;
+}
 
 
 .video{
     height: 315px;
-    margin: 6px;
+    margin-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 .video-descr{
@@ -733,12 +752,19 @@ body{
 
 .left-sidebar{
     margin: 6px;
+    float: left;
+}
+
+.content{
+    padding-top: 6px;
+    margin-bottom: 120px;
 }
 
 .twitter{
     width: 300px;
     background-color: #4fc6f8;
     color: #ffffff;
+    margin-right: 6px;
 }
 
 .twitter .title{
@@ -753,10 +779,15 @@ body{
 
 .twitter .text{
     margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .twitter .time{
     margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 .twitter .login{
@@ -772,4 +803,315 @@ body{
     position: absolute;
     top: 0px;
     right: -50px;
+}
+
+.what-hot{
+    width: 300px;
+    background-color: #fff;
+    margin-top: 12px;
+    padding-bottom: 30px;
+}
+
+.what-hot .circles{
+    text-align: right;
+    top: 20px;
+    margin-right: 10px;
+    float: right;
+}
+
+.what-hot .circles .circle{
+    width:10px;
+    height:10px;
+    display: inline-block;
+    border: 1px solid #787878;
+    border-radius:50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    -khtml-border-radius:50px; font-size:20px;
+    color:#787878;
+    line-height:100px;
+    text-align:center;
+    background: transparent;
+    margin: 5px;
+}
+
+.what-hot .circles .circle:hover{
+    background: #787878;
+}
+
+.hot{
+    margin-top: 10px;
+}
+
+.what-hot .title{
+    font-size: 16pt;
+    font-weight: 300;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 115px;
+}
+
+.what-hot img{
+    position: relative;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.what-hot .time{
+    color: #d4d8da;
+    margin-top: 10px;
+}
+
+.what-hot .text {
+    margin-left: 100px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 11pt;
+}
+
+
+.ask-question{
+    width: 300px;
+    background-color: #ffffff;
+    margin-top: 12px;
+}
+
+.ask-question .title{
+    font-size: 16pt;
+    font-weight: 300;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.ask-question .input{
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid #dde2e4;
+    height: 40px;
+    font-size: 14pt;
+    width: 80%;
+}
+
+.ask-question .textarea{
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid #dde2e4;
+    height: 60px;
+    font-size: 14pt;
+    width: 80%;
+}
+
+.ask-question .submit-btn {
+    border-radius: 5px;
+    height: 44px;
+    color: #ffffff;
+    border: none;
+    background-color: #ea6060;
+    width: 120px;
+    font-size: 14pt;
+    padding-top: 1px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.calendar{
+    /*margin-left: 6px;*/
+    height: 300px;
+    width: 300px;
+    background-color: #1f3045;
+    float: left;
+    margin-bottom: 6px;
+}
+
+.view-more-stories{
+    margin-left: 630px;
+    height: 300px;
+    background-color: #ea6060;
+    text-transform: uppercase;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.view-more-stories .title{
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+.view-more-stories a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30pt;
+    font-weight: 100;
+    line-height: 1.5;
+    position: relative;
+}
+
+.view-more-stories a::before{
+    content: "";
+    background: url('Untitled-1.png') no-repeat -275px -70px;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+}
+
+.what-lorem .lorem-photo{
+    height: 300px;
+    background-color: #787878;
+    margin-top: 12px;
+    margin-right: 6px;
+    margin-left: 318px;
+    position: relative;
+}
+
+.what-lorem .lorem-content{
+    height: 300px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 6px;
+    margin-left: 318px;
+    position: relative;
+}
+
+.what-lorem .lorem-photo::before{
+    content: "";
+    background: url('Untitled-1.png') no-repeat  0 -188px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.what-lorem .lorem-content::before{
+    content: "";
+    background: url('Untitled-1.png') no-repeat -314px -70px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+
+.what-lorem .lorem-content .title{
+    font-size: 16pt;
+    font-weight: 600;
+    padding-right: 20%;
+    margin-bottom: 10px;
+    padding-top: 45px;
+    margin-left: 60px;
+}
+
+.what-lorem .lorem-content .time{
+    color: #d4d8da;
+    margin-left: 60px;
+}
+
+.what-lorem .lorem-content .text {
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-right: 23px;
+    line-height: 1.5;
+    font-size: 11pt;
+}
+
+
+.what-lorem .lorem-content .text a{
+    text-decoration: none;
+    color: #ea6060;
+}
+
+.what-lorem .lorem-content .statistic{
+    margin-left: 60px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.what-lorem .statistic .shares{
+    margin-left: 40px;
+    position: relative;
+}
+
+.what-lorem .statistic .shares::before{
+    content: "";
+    background: url('Untitled-1.png') no-repeat  -361px -70px;
+    width: 18px;
+    height: 16px;
+    position: absolute;
+    top: 1;
+    left: -40px;
+}
+
+.what-lorem .statistic .views{
+    margin-left: 60px;
+    position: relative;
+}
+
+.what-lorem .statistic .views::before{
+    content: "";
+    background: url('Untitled-1.png') no-repeat  -358px -90px;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 3px;
+    left: -40px;
+}
+
+.what-lorem .statistic .comments{
+    margin-left: 60px;
+    position: relative;
+}
+
+.what-lorem .statistic .comments::before{
+    content: "";
+    background: url('Untitled-1.png') no-repeat  -388px -71px;
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    left: -40px;
+}
+
+.quote{
+    height: 150px;
+    background-color: #ffffff;
+    margin-top: 12px;
+    margin-right: 6px;
+    margin-left: 318px;
+    position: relative;
+
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 22pt;
+}
+
+.quote::before{
+    content: "";
+    background: url('Untitled-1.png') no-repeat -412px -71px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+.tabs{
+    height: 300px;
+    background-color: #ffffff;
+    margin-top: 12px;
+    margin-right: 6px;
+    margin-left: 318px;
+    position: relative;
 }
