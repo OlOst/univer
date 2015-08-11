@@ -1,112 +1,371 @@
-<!doctype html>
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Flat Blog Magazine UI</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.min.css'>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+        <style>
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 930px;
+  margin: auto;
+  background: url(http://i.imgur.com/Oy4gzyy.jpg);
+}
+.menu {
+  background: #fff;
+  height: 60px;
+  line-height: 60px;
+  font-size: 12pt;
+}
+.toggle,
+.mainmenu,
+.search,
+.social,
+.user {
+  float: left;
+}
+.search,
+.social,
+.user {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.menuright {
+  float: right;
+  color: #c5cdd0;
+}
+.menuright a {
+  color: #c5cdd0;
+  transition: 0.3s;
+}
+.menuright a:hover,
+.menuright a.active {
+  color: #57cbc8;
+}
+.toggle {
+  width: 60px;
+  font-size: 20pt;
+  text-align: center;
+  background: #57cbc8;
+  color: #fff;
+}
+.mainmenu {
+  margin-left: 10px;
+}
+.mainmenu a {
+  text-decoration: none;
+  color: #475258;
+  transition: 0.3s;
+}
+.mainmenu a:hover {
+  color: #57cbc8;
+}
+.mainmenu li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.search input {
+  display: none;
+  border: 1px solid #c5cdd0;
+  padding: 5px;
+  font-size: 12pt;
+  outline: none;
+}
+.social {
+  border-left: 1px solid #e1e5e7;
+  border-right: 1px solid #e1e5e7;
+}
+.social li {
+  display: inline-block;
+  margin: 0 6px;
+}
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
 
-<body>
-  <script src="js/scripts.js"></script>
-  <div id="wrapper">
-    <header>
-      <h1>Hello Site!</h1>
-      <nav>
-        <div class="nav-menu">
-         <img src="images/icons/navigation/menu.png" alt="menu">
-          <ul class="nav-left">
-            <li><a href="/home/">Home</a></li>
-            <li><a href="/store/">Store</a></li>
-            <li class="active" style="color: #56ccc8;"><a href="/blog/">Blog</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
-          <ul class="nav-right">
-            <li><a href="/search/"><img src="images/icons/navigation/search.png" alt="search"></a></li>
-            <li><a href="/facebook/"><img src="images/icons/navigation/facebook.png" alt="facebook"></a></li>
-            <li><a href="/twitter/"><img src="images/icons/navigation/twitter.png" alt="twitter"></a></li>
-            <li><a href="/google/"><img src="images/icons/navigation/google.png" alt="goolgle"></a></li>
-            <li><a href="/login/"><img src="images/icons/navigation/login.png" alt="login"></a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <div class="left-menu">
-      <aside>
-        <nav>
-         <ul class="top-main">
-           <li><a href="/home/"><img src="images/icons/menu/home.png" alt="home">Home</a></li>
-           <li><a href="/shop/"><img src="images/icons/menu/shop.png" alt="shop">Store</a></li>
-           <li class="active"><a href="/blog/"><img src="images/icons/menu/note.png" alt="blog">Blog</a></li>
-           <li><a href="/community/"><img src="images/icons/menu/users.png" alt="goolgle">Community</a></li>
-           <li><a href="/contests/"><img src="images/icons/menu/trophy.png" alt="contests">Contests</a></li>
-           <li><a href="/about/"><img src="images/icons/menu/info.png" alt="about">About</a></li>
-           <li><a href="/contact/"><img src="images/icons/menu/email.png" alt="contact">Contact</a></li>
-          </ul>
-          <ul class="bot-main">
-            <li><img src="images/icons/menu/phone_info.png" alt="home">
-              (912) 555-1234<br>
-              (912) 555-5678</li>
-            <li><img src="images/icons/menu/pointer_info.png" alt="pointer">1600 Pennsylvania
-              Ave NW, Washington
-              DC 20500, USA</li>
-            <li ><img src="images/icons/menu/email_info.png" alt="email">hello@website.com<br>
-              office@website.com</li>
-          </ul>
-        </nav>
-      </aside>
-      <aside class="inside">
-        <nav>
-          <ul>
-            <li><a href="/tech/"><span>Tech</span><img src="images/icons/arrow.png" alt="arrow"></a></li>
-            <li><a href="/software/">Software & Apps</a></li>
-            <li><a href="/gadgets/">Gadgets</a></li>
-            <li><a href="/mobile/">Mobile</a></li>
-          </ul>
-          <ul class="active">
-            <li><a href="/entertaiment/"><span>Entertaiment</span><img src="images/icons/arrow.png" alt="arrow"></a></li>
-            <li><a href="/film/">Film</a></li>
-            <li><a href="/gaming/">Gaming</a></li>
-            <li><a href="/music/">Music</a></li>
-            <li><a href="/sport/">Sport</a></li>
-          </ul>
-          <ul class="aside-menu">
-            <li><a href="/business/"><span>Business</span><img src="images/icons/arrow.png" alt="arrow"></a></li>
-            <li><a href="/jobs/">Jobs</a></li>
-            <li><a href="/marketing/">Marketing</a></li>
-            <li><a href="/media/">Media</a></li>
-          </ul>
-          <ul class="aside-menu">
-            <li><a href="/lifestyle/"><span>Lifestyle</span><img src="images/icons/arrow.png" alt="arrow"></a></li>
-            <li><a href="/home/">Home</a></li>
-            <li><a href="/health/">Health & Fitmess</a></li>
-            <li><a href="/trawel/">Travel & Leisure</a></li>
-          </ul>
-        </nav>
-      </aside>
-      </div>
-    <div class="content">
-      <section>
-        <blockquote>
-          <p><i>
-           "If you don't like soething change it. If you can't change it, change the way you think about it"
-          </i></p>
-        </blockquote>
-        <h2>Content</h2>
-      </section>
+
+.container {
+  overflow: hidden;
+  margin-top: 1.5%;
+}
+.sidebar {
+  float: left;
+  width: 32%;
+  margin-right: 1.5%;
+  padding-bottom: 1.5%;
+  background: #fff;
+  color: #475258;
+}
+.sidebar h2 {
+  font-size: 16pt;
+  padding: 6%;
+  border-bottom: 1px solid #e1e5e7;
+}
+.sidebar li {
+  padding: 6%;
+}
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+}
+.sidebar a img {
+  float: left;
+  margin-right: 6%;
+  display: block;
+}
+.sidebar a h3 {
+  color: #475258;
+}
+.sidebar a span {
+  display: block;
+  margin-top: 6%;
+  color: #919fa7;
+  font-size: 8pt;
+}
+.content {
+    float: right;
+    width: 66.5%;
+    background: #fff;
+}
+      .contentt {
+          float: right;
+          width: 33.5%;
+          background: #fff;
+
+}
+.image {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.image img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: 0.3s;
+}
+.image img:hover {
+  opacity: 0.8;
+}
+.image span {
+  background: #ea6060;
+  display: block;
+  position: absolute;
+  font-size: 16pt;
+  width: 20%;
+  color: #fff;
+  text-align: center;
+  padding: 20% 10% 2%;
+  transform: rotateZ(-45deg);
+  top: -25%;
+  left: -20%;
+  z-index: 1;
+}
+.desc {
+  position: relative;
+  background: #fff;
+  padding: 6% 6% 6% 10%;
+}
+.desc .type {
+  display: block;
+  background: #57cbc8;
+  color: #fff;
+  font-size: 14pt;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.desc h1 {
+  font-size: 19pt;
+  color: #475258;
+  margin-bottom: 3%;
+}
+.desc p {
+  line-height: 1.5em;
+  color: #999;
+  font-weight: 300;
+}
+.desc a {
+  color: #ea6060;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.desc a:hover {
+  color: #9c1515;
+}
+.share {
+  margin-top: 5%;
+}
+.share li {
+  display: inline-block;
+  margin-right: 5%;
+  font-weight: 300;
+}
+.share a {
+  color: #999;
+  transition: 0.3s;
+}
+.share a i,
+.share a:hover {
+  color: #57cbc8;
+}
+
+    </style>
+
+    
+
+
+    
+  </head>
+
+  <body>
+
+
+
+<nav class="menu">
+  <div class="toggle"><i class="fa fa-bars"></i></div>
+  <ul class="mainmenu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Store</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="menuright">
+    <div class="search">
+      <input type="text" />
+      <a href="#"><i class="fa fa-search"></i></a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+    </ul>
+    <div class="user">
+      <a href="#"><i class="fa fa-user"></i></a>
     </div>
   </div>
-  <footer>
-    <h2><strong>this is footer</strong></h2>
-   </footer>
+</nav>
+
+
+
+<div class="container">
+    <div class="sidebar">
+        <a href="#">
+            <img src="http://s1.iconbird.com/ico/2013/3/637/w128h128139396832128.png" width="50" height="50" alt="" />
+        <h2>Home</h2>
+            <a href="#">
+                <img src="http://s1.iconbird.com/ico/2013/3/637/w128h12813939683293.png" width="50" height="50" alt="" />
+                <h2>Store</h2>
+                <a href="#">
+                    <img src="http://s1.iconbird.com/ico/2013/3/637/w128h128139396832128.png" width="50" height="50" alt="" />
+                    <h2>Blog</h2>
+                    <a href="#">
+                        <img src="http://s1.iconbird.com/ico/2013/3/637/w128h128139396832128.png" width="50" height="50" alt="" />
+                        <h2>About</h2>
+                        <a href="#">
+                            <img src="http://s1.iconbird.com/ico/2013/3/637/w128h128139396832128.png" width="50" height="50" alt="" />
+                            <h2>Contact</h2>
+                            <a href="#">
+                                    <img src="http://s1.iconbird.com/ico/2013/3/637/w128h128139396832128.png" width="50" height="50" alt="" />
+                                    <h2>Community</h2>
+    </div>
+
+
+
+
+    <div class="sidebar">
+        <li><a href="#"><i class="fa fa-facebook"> Facebook</i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"> Twitter</i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"> Google-plus</i></a></li>
+    </div>
+
+
+    <div class="contentt">
+        <div class="sidebar">
+
+            <a href="#"><i class="fa fa-twitter"> <br>
+                <br>
+                <br>
+                <br>
+                89K</i></a>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="sidebar">
+    <h2>Bla bla bla</h2>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="http://www.digestnvk10.org.ua/siv/image31.png" alt="" />
+          <h3>1111111111111111111111..</h3>
+          <span>...</span>
+        </a>
+      </li>
+      <li>
+
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <div class="image">
+
+      <img src="http://www.adm.km.ua/img/obl_derz_sk.jpg" alt="" />
+    </div>
+    <div class="desc">
+      <span class="type">
+        <i class="fa fa-file-text"></i>
+      </span>
+      
+      <h1>Новини</h1>
+      <p>все чудово... <a href="#">Читати далі</a></p>
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
   </body>
 </html>
