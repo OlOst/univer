@@ -242,3 +242,144 @@ ul{
     display: block;
     font-size: 14px;
 }
+
+.block-slider{
+    background: #787878;
+    position: relative;
+}
+
+#slide-left, #slide-right {
+    position: absolute;
+    top: 45%;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+#slide-left{
+    left: 0;
+}
+
+#slide-right{
+    right: 0;
+}
+
+.block-slider-content{
+    padding: 20px 48px 10px 48px;
+}
+
+.block-slider-slide h6{
+    font-weight: 100;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.block-slider-slide p{
+    font-size: 14px;
+    color: #fff;
+}
+
+.learnMore{
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.pagination{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pagination > div{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pagination > div > span{
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.pagination > div > span.active{
+    background: #fff;
+}
+
+.block-video-describe{
+    background: #fff;
+    padding: 20px 20px 20px 40px;
+    position: relative;
+    width: 300px;
+}
+
+.block-video-describe h6{
+    font-size: 21px;
+}
+
+.block-video-describe p.time{
+    color: #8A9093;
+    margin: 20px 0;
+}
+
+.video-icon{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 10px;
+    background: #EA6060;
+    color: #fff;
+}
+
+.block-choice{
+    width: 100px;
+    background: #1F3045;
+    padding: 0 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.block-choice > div{
+    margin: 20px 0;
+}
+
+.block-choice > div i{
+    display: block;
+}
+
+.block-choice > div span{
+    display: block;
+}
+
+.video{
+    width: 500px;
+    background: #475055;
+}
+
+.share_likes{
+    width: 250px;
+    padding: 50px 0;
+    text-align: center;
+    background: #1F3045;
+}
+
+.share_likes > .block_sl{
+    display: inline-block;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.share_likes > .block_sl > i, .share_likes > .block_sl > span{
+    display: block;
+}
+
+.share_likes > .block_sl > i{
+    font-size: 32px;
+}
