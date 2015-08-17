@@ -1,1 +1,5 @@
-<?php phpinfo(); ?>
+<?php phpinfo();
+if ($a>5) {
+
+}
+?>
